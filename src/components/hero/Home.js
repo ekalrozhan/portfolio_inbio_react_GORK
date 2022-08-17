@@ -1,5 +1,4 @@
-import React from "react";
-import { useTypewriter } from "react-simple-typewriter";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 import "./home.css";
 import hero from "../pic/hero.png";
 import skill1 from "../pic/skill1.png";
@@ -9,7 +8,7 @@ import skill3 from "../pic/skill3.png";
 const Home = () => {
   const { text } = useTypewriter({
     words: ["Front-End Developer", "Backend Developer", "Full Stack Developer"],
-    loop: false, // Infinit
+    loop: false,
   });
   return (
     <>
@@ -22,6 +21,7 @@ const Home = () => {
             </h1>
             <h2>
               a <span>{text}</span>
+              <Cursor />
             </h2>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
