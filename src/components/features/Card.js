@@ -4,9 +4,7 @@ const Card = ({ image, title, desc }) => {
       <div className="box btn_shadow">
         <img src={image} alt="" />
         <h2>{title}</h2>
-        <p>
-         {desc}
-        </p>
+        <p>{desc}</p>
 
         <a href="/">
           <i className="fas fa-arrow-right"></i>
